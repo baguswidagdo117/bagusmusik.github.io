@@ -1,0 +1,45 @@
+{
+  "name": "bagusmusik",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BagusMusik - Platform servis & reparasi alat musik (PWA)",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "prisma generate && next build",
+    "start": "next start -H 0.0.0.0",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:studio": "prisma studio",
+    "postinstall": "prisma generate"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "6.16.2",
+    "bcryptjs": "2.4.3",
+    "jose": "5.9.6",
+    "next": "^15.5.28",
+    "qrcode": "1.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.6",
+    "@types/node": "22.15.0",
+    "@types/qrcode": "1.5.5",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.0",
+    "autoprefixer": "10.4.21",
+    "eslint": "9.37.0",
+    "eslint-config-next": "^15.5.28",
+    "postcss": "8.5.6",
+    "prisma": "6.16.2",
+    "tailwindcss": "3.4.17",
+    "tsx": "4.20.6",
+    "typescript": "5.8.3"
+  }
+}
